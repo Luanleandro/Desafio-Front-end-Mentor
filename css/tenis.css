@@ -1,0 +1,95 @@
+.tenis {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  gap: 0px 120px;
+}
+
+.tenis-imagem {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.tenis-imagem img {
+    flex: 1;
+    min-width: 120px;
+}
+
+.tenis-imagem img:first-child {
+    min-width: 100%;
+}
+
+.tenis-conteudo-q-menos,
+.tenis-conteudo-q-mais {
+  color: var(--cor-p1);
+  padding-bottom: 8px;
+}
+
+.tenis-conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.tenis-conteudo > span {
+  margin-bottom: 16px;
+}
+
+.tenis-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.tenis-conteudo p {
+  margin-bottom: 32px;
+  max-width: 80ch;
+}
+
+.tenis-conteudo-valor {
+  display: grid;
+  gap: 16px;
+  align-items: center;
+  grid-template-columns: auto;
+  margin-bottom: 60px;
+}
+
+.tenis-conteudo-valor > span {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  width: max-content;
+  position: relative;
+}
+
+.tenis-conteudo-valor span > span {
+  background-color: var(--cor-p2);
+  padding: 0px 8px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: var(--cor-p1);
+}
+
+.tenis-conteudo-valor span:nth-child(2):after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--cor-06);
+}
+
+.tenis-conteudo-carrinho,
+.tenis-conteudo-carrinho-valor {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.tenis-conteudo-cart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--cor-0);
+  gap: 12px;
+}
